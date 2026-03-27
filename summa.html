@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VK Construction Properties</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+body{
+  font-family: 'Segoe UI', sans-serif;
+  background:#f5f7fa;
+}
+
+.header{
+  background:linear-gradient(135deg,#0d6efd,#6610f2);
+  color:#fff;
+  padding:60px 20px;
+  text-align:center;
+}
+
+.property-card{
+  border:none;
+  border-radius:20px;
+  overflow:hidden;
+  transition:0.4s;
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.property-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+.property-img{
+  height:200px;
+  background:url('https://images.unsplash.com/photo-1568605114967-8130f3a36994') center/cover;
+}
+
+.price{
+  font-size:20px;
+  font-weight:bold;
+  color:#198754;
+}
+
+.badge-custom{
+  background:#0d6efd;
+}
+
+.fade-in{
+  animation:fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp{
+  from{
+    opacity:0;
+    transform:translateY(40px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+.cta{
+  background:#6610f2;
+  color:#fff;
+  padding:40px;
+  border-radius:20px;
+}
+
+.footer{
+  background:#111;
+  color:#fff;
+  padding:30px 0;
+}
+
+.footer a{
+  color:#ccc;
+  text-decoration:none;
+}
+
+.footer a:hover{
+  color:#fff;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<section class="header">
+  <h1>VK Construction & Agency</h1>
+  <p>Affordable Dream Homes in Chennai</p>
+</section>
+
+<!-- PROPERTIES -->
+<div class="container py-5">
+  <div class="row g-4">
+
+    <!-- CARD -->
+    <div class="col-md-4 fade-in">
+      <div class="card property-card">
+        <div class="property-img"></div>
+        <div class="card-body">
+          <h5>1 BHK - Thirumal Nagar</h5>
+          <p class="price">₹28 Lakhs</p>
+          <p>Land: 563 sqft<br>Building: 465 sqft<br>Facing: East</p>
+          <span class="badge badge-custom">3 Available</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 fade-in">
+      <div class="card property-card">
+        <div class="property-img"></div>
+        <div class="card-body">
+          <h5>2 BHK - Veppampattu</h5>
+          <p class="price">₹60 Lakhs</p>
+          <p>Land: 1155 sqft<br>Building: 900 sqft<br>Facing: North</p>
+          <span class="badge badge-custom">2 Available</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 fade-in">
+      <div class="card property-card">
+        <div class="property-img"></div>
+        <div class="card-body">
+          <h5>2 BHK - Annex 2</h5>
+          <p class="price">₹45 Lakhs</p>
+          <p>Land: 1000 sqft<br>Building: 950 sqft<br>Facing: South</p>
+          <span class="badge badge-custom">2 Available</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 fade-in">
+      <div class="card property-card">
+        <div class="property-img"></div>
+        <div class="card-body">
+          <h5>3 BHK Duplex - Ishwarya Nagar</h5>
+          <p class="price">₹65 Lakhs</p>
+          <p>Land: 703 sqft<br>Building: 1350 sqft<br>Car Parking Available</p>
+          <span class="badge badge-custom">Near Railway</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 fade-in">
+      <div class="card property-card">
+        <div class="property-img"></div>
+        <div class="card-body">
+          <h5>2 BHK - Srimathi Nagar</h5>
+          <p class="price">₹55 Lakhs</p>
+          <p>Land: 1200 sqft<br>Building: 1100 sqft<br>Facing: North</p>
+          <span class="badge badge-custom">2 Available</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 fade-in">
+      <div class="card property-card">
+        <div class="property-img"></div>
+        <div class="card-body">
+          <h5>2 BHK - Balambigai Nagar</h5>
+          <p class="price">₹50 Lakhs</p>
+          <p>Land: 990 sqft<br>Building: 900 sqft<br>Facing: North</p>
+          <span class="badge badge-custom">2 Available</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 fade-in">
+      <div class="card property-card">
+        <div class="property-img"></div>
+        <div class="card-body">
+          <h5>2 BHK - Ready to Move</h5>
+          <p class="price">₹37 Lakhs</p>
+          <p>Land: 935 sqft<br>Building: 825 sqft<br>Facing: North</p>
+          <span class="badge badge-custom">DTCP Approved</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="container py-5">
+  <div class="cta text-center">
+    <h3>Book Your Dream Home Today</h3>
+    <p>90% Bank Loan Available | 100% Vastu</p>
+    <button class="btn btn-light">Call Now</button>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container text-center">
+    <h5>VK Construction & Agency</h5>
+    <p>Chennai | Sevvapet | Thiruninravur</p>
+    <p>
+      <a href="#">Home</a> |
+      <a href="#">About</a> |
+      <a href="#">Services</a> |
+      <a href="#">Contact</a>
+    </p>
+    <p>Phone: +91 99523 57012</p>
+  </div>
+</footer>
+
+</body>
+</html>

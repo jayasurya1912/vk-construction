@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Vk Construction</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <!-- PRELOADER -->
+<div id="vk-preloader">
+  <div class="vk-loader">
+
+    <div class="vk-circle"></div>
+
+    <h5>VK Construction</h5>
+    <p>Building Your Dream...</p>
+
+  </div>
+</div>
+
+    <!-- POPUP -->
+<div class="vk-popup" id="vkPopup">
+  <div class="vk-popup-box">
+
+    <!-- CLOSE -->
+    <span class="vk-close" onclick="closePopup()">&times;</span>
+
+    <h3>Get Free Consultation</h3>
+    <p>Build your dream home with VK Construction</p>
+
+    <form id="whatsappForm">
+      <div class="row g-3">
+
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Your Name">
+        </div>
+
+        <div class="col-md-6">
+          <input type="tel" class="form-control" placeholder="Phone Number">
+        </div>
+
+        <div class="col-md-6">
+          <input type="email" class="form-control" placeholder="Email Address">
+        </div>
+
+        <div class="col-md-6">
+          <select class="form-control">
+            <option>Select Service</option>
+            <option>Residential Construction</option>
+            <option>Commercial Projects</option>
+            <option>Renovation</option>
+            <option>Interior Design</option>
+          </select>
+        </div>
+
+        <div class="col-12">
+          <textarea class="form-control" rows="3" placeholder="Project Details"></textarea>
+        </div>
+
+        <div class="col-12">
+          <button type="submit" class="vkfs-btn w-100">
+            Submit Request →
+          </button>
+        </div>
+
+      </div>
+    </form>
+
+  </div>
+</div>
+
+<!-- 🔹 TOP BAR -->
+<div class="top-bar">
+  <div class="container topbar-flex">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <span><i class="fa fa-envelope"></i> Vinothkumarvr007@gmail.com</span>
+      <span><i class="fa fa-location"></i> No : 2/132 puliyamaram bus stop veppampattu pincode - 602024</span>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-linkedin-in"></i>
+      <a href="https://www.instagram.com/vk_construction_and_agency?igsh=bHE0OWhodzl2c2tj&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+
+  </div>
+</div>
+<!-- 🔹 NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container">
+
+    <!-- LOGO -->
+    <a class="navbar-brand" href="#"><img src="images/mainlogo.png" width="100px" alt=""></a>
+
+    <!-- MOBILE TOGGLE -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- DESKTOP MENU -->
+    <div class="collapse navbar-collapse desktop-menu">
+
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#service">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#port">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#why">Why choose </a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- RIGHT SIDE -->
+      <div class="d-flex align-items-center gap-3">
+
+        <!-- <i class="fa fa-search"></i>
+        <i class="fa fa-shopping-cart"></i> -->
+
+        <a href="#contact" class="btn quote-btn">GET A QUOTE  <i class="fa-solid fa-arrow-right"></i></a>
+
+        <div class="call-box">
+          <div class="call-icon">
+            <i class="fa fa-phone"></i>
+          </div>
+          <div>
+            <small>Call Us Now</small><br>
+            <strong>+91 8610992897</strong>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</nav>
+
+<!-- 🔹 OFFCANVAS MOBILE MENU -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Wotech</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+
+  <div class="offcanvas-body">
+
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#service">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#port">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#why">Why choose </a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+    </ul>
+
+    <hr>
+
+    <a href="#contact" class="btn quote-btn">GET A QUOTE  <i class="fa-solid fa-arrow-right"></i></a>
+
+    <div class="call-box">
+      <div class="call-icon">
+        <i class="fa fa-phone"></i>
+      </div>
+      <div>
+        <small>Call Us Now</small><br>
+        <strong>+91 8610992897</strong>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- 🔹 HERO BANNER -->
+<section class="vk-hero d-flex align-items-center">
+  <div class="container text-white">
+    
+    <div class="row">
+      <div class="col-lg-7">
+        
+        <h1 class="vk-title">
+  <span id="typing-text"></span><span class="cursor">|</span>
+</h1>
+
+        <p class="vk-subtitle">
+          VK Construction delivers high-quality residential and commercial projects 
+          with innovation, trust, and excellence. We bring your vision to life with 
+          precision and expertise.
+        </p>
+
+        <div class="vk-btn-group">
+          <a href="#service" class="btn quotes-btn">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#port" class="btn vk-btn-outline">Our Projects</a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="vk-modern-section" style="margin-top: -12rem;">
+  <div class="container">
+
+    <div class="vk-modern-wrapper">
+
+      <!-- BIG IMAGE -->
+      <div class="vk-main-image">
+        <img src="images/scene-construction-site-with-equipment.jpg" alt="">
+      </div>
+
+      <!-- LEFT FLOAT CARD -->
+      <div class="vk-float-card left-card">
+        <span class="tag">DesignBuild</span>
+        <h3>Shaping Future Living Spaces</h3>
+        <p>Modern construction with trust & quality</p>
+        <a href="#service" class="btn quotes-btn">Explore →</a>
+      </div>
+
+      <!-- RIGHT FLOAT CARD -->
+      <div class="vk-float-card right-card">
+        <div class="icon-box">
+          <i class="fa-solid fa-layer-group"></i>
+        </div>
+
+        <h2>15K+</h2>
+        <p>Happy Customers</p>
+
+        <div class="avatars">
+          <img src="https://randomuser.me/api/portraits/men/1.jpg">
+          <img src="https://randomuser.me/api/portraits/women/2.jpg">
+          <img src="https://randomuser.me/api/portraits/men/3.jpg">
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<section class="vk-about py-2" style="margin-top: -4rem;" id="about">
+  <div class="container">
+    <div class="row align-items-center vk-about-wrapper">
+
+      <!-- LEFT IMAGE -->
+      <div class="col-lg-6">
+        <div class="vk-about-img">
+          <img src="images/aziziabtn.webp" alt="About">
+        </div>
+      </div>
+
+      <!-- RIGHT CONTENT -->
+      <div class="col-lg-6">
+        <div class="vk-about-content">
+
+          <span class="vk-tag">About Us</span>
+
+          <h2 >
+            Building Strong Foundations for the Future
+          </h2>
+
+          <p style="text-align: justify;">
+           VK Construction is a trusted name in delivering high-quality residential and commercial projects with a strong focus on durability, design, and customer satisfaction. With years of experience in the construction industry, we specialize in building modern, vastu-compliant homes that combine functionality with aesthetic appeal. Our team of skilled professionals ensures every project is executed with precision, using quality materials and advanced construction techniques.
+
+We are committed to providing affordable housing solutions without compromising on quality, making homeownership accessible for everyone. From site selection to final handover, we guide our clients through every step with transparency and reliability. With prime locations, bank loan assistance, and on-time project delivery, VK Construction continues to turn dreams into reality and build lasting relationships with our customers.
+          </p>
+
+          <a href="#why" class="vk-btn-animate">
+            Learn More <i class="fa-solid fa-arrow-right-long"></i>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="vk-marquee py-5">
+  <div class="container-fluid">
+
+    <div class="vk-marquee-wrapper">
+
+      <div class="vk-marquee-track">
+
+        <!-- Images (repeat twice for smooth loop) -->
+        <img src="images/one.jpeg" />
+        <img src="images/two.jpeg" />
+        <img src="images/three.jpeg" />
+        <img src="images/four.jpeg" />
+        <img src="images/five.jpeg" />
+
+        <!-- duplicate for infinite -->
+        <img src="images/six.jpeg" />
+        <img src="images/seven.jpeg" />
+        <img src="images/eight.jpeg" />
+        <img src="images/nine.jpeg" />
+        <img src="images/four.jpeg" />
+        <img src="images/three.jpeg" />
+        <img src="images/four.jpeg" />
+        <img src="images/five.jpeg" />
+
+        <!-- duplicate for infinite -->
+        <img src="images/six.jpeg" />
+        <img src="images/seven.jpeg" />
+        <img src="images/eight.jpeg" />
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container-fluid" style="background: linear-gradient(135deg, #0011B6, #000000);">
+<div class="container py-5">
+
+  <h1 style="text-align: center;color: white;">VK Construction & Agency</h1>
+  <p style="text-align: center;margin-bottom: 2rem;color: white;">Affordable Dream Homes in Chennai</p>
+  <div class="row g-4">
+
+    <!-- CARD -->
+    <div class="col-md-4 fade-in">
+      <div class="card property-card">
+        <div class="property-img"></div>
+        <div class="card-body">
+          <h5>1 BHK - Thirumal Nagar</h5>
+          <p class="price">₹28 Lakhs</p>
+          <p>Land: 563 sqft<br>Building: 465 sqft<br>Facing: East</p>
+          <span class="badge badge-custom">3 Available</span><br>
+          <div style="text-align: center;"><a href="#contact" style="background-color: #ffb400;color: black;" class="btn ">Enquiry Now</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 fade-in">
+      <div class="card property-card">
+        <div class="property-imgs"></div>
+        <div class="card-body">
+          <h5>2 BHK - Veppampattu</h5>
+          <p class="price">₹60 Lakhs</p>
+          <p>Land: 1155 sqft<br>Building: 900 sqft<br>Facing: North</p>
+          <span class="badge badge-custom">2 Available</span>
+          <div style="text-align: center;"><a href="#contact" style="background-color: #ffb400;color: black;" class="btn ">Enquiry Now</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 fade-in">
+      <div class="card property-card">
+        <div class="property-imgss"></div>
+        <div class="card-body">
+          <h5>2 BHK - Annex 2</h5>
+          <p class="price">₹45 Lakhs</p>
+          <p>Land: 1000 sqft<br>Building: 950 sqft<br>Facing: South</p>
+          <span class="badge badge-custom">2 Available</span>
+          <div style="text-align: center;"><a href="#contact" style="background-color: #ffb400;color: black;" class="btn ">Enquiry Now</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 fade-in">
+      <div class="card property-card">
+        <div class="property-imgsss"></div>
+        <div class="card-body">
+          <h5>3 BHK Duplex - Ishwarya Nagar</h5>
+          <p class="price">₹65 Lakhs</p>
+          <p>Land: 703 sqft<br>Building: 1350 sqft<br>Car Parking Available</p>
+          <span class="badge badge-custom">Near Railway</span>
+          <div style="text-align: center;"><a href="#contact" style="background-color: #ffb400;color: black;" class="btn ">Enquiry Now</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 fade-in">
+      <div class="card property-card">
+        <div class="property-imgses"></div>
+        <div class="card-body">
+          <h5>2 BHK - Srimathi Nagar</h5>
+          <p class="price">₹55 Lakhs</p>
+          <p>Land: 1200 sqft<br>Building: 1100 sqft<br>Facing: North</p>
+          <span class="badge badge-custom">2 Available</span>
+         <div style="text-align: center;"><a href="#contact" style="background-color: #ffb400;color: black;" class="btn ">Enquiry Now</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 fade-in">
+      <div class="card property-card">
+        <div class="property-img"></div>
+        <div class="card-body">
+          <h5>2 BHK - Balambigai Nagar</h5>
+          <p class="price">₹50 Lakhs</p>
+          <p>Land: 990 sqft<br>Building: 900 sqft<br>Facing: North</p>
+          <span class="badge badge-custom">2 Available</span>
+          <div style="text-align: center;"><a href="#contact" style="background-color: #ffb400;color: black;" class="btn ">Enquiry Now</a></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<section class="vk-why" id="why">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- LEFT CONTENT -->
+      <div class="col-lg-6">
+        <div class="vk-why-content">
+          <span class="vk-tag">Why Choose Us</span>
+
+          <h2>
+            Building Trust, Quality <br> & Modern Living
+          </h2>
+
+          <p>
+            VK Construction delivers high-quality homes with modern design,
+            vastu compliance, and strong construction standards. We ensure
+            customer satisfaction with affordable pricing and bank loan support.
+          </p>
+
+          <!-- FEATURES -->
+          <div class="vk-features">
+            <div><i class="fa fa-check"></i> 100% Vastu Compliant</div>
+            <div><i class="fa fa-check"></i> 90% Bank Loan Support</div>
+            <div><i class="fa fa-check"></i> Prime Locations</div>
+            <div><i class="fa fa-check"></i> Affordable Pricing</div>
+          </div>
+
+          <a href="#contact" class="vk-btn">
+            Explore Properties <i class="fa fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT IMAGE -->
+      <div class="col-lg-6">
+        <div class="vk-why-img">
+          <img src="images/why.jpg" alt="">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="vk-services py-5" style=" background: linear-gradient(135deg, #0011B6, #000000)" id="service">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-white">Our Services</h2>
+      <p style="color: white;">We deliver quality construction solutions</p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- CARD 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="vk-service-card">
+          <img src="images/residential.jpg" alt="">
+
+          <div class="vk-service-content">
+            <h5>Residential Construction</h5>
+            <p>Residential, Villas, Apartments, Independent Houses.</p>
+
+            <a href="#contact" class="vk-btn">Learn More →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="vk-service-card">
+          <img src="images/industial.jpg" alt="">
+
+          <div class="vk-service-content">
+            <h5>Industrial Projects</h5>
+            <p>Industrial Buildings, Construction Management solutions.</p>
+
+            <a href="#contact" class="vk-btn">Learn More →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="vk-service-card">
+          <img src="images/quality.jpg" alt="">
+
+          <div class="vk-service-content">
+            <h5>Quality Assurance</h5>
+            <p>Quality Assurance on Every Project with precision.</p>
+
+            <a href="#contact" class="vk-btn">Learn More →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="vk-service-card">
+          <img src="images/trusted.webp" alt="">
+
+          <div class="vk-service-content">
+            <h5>Trusted Clients</h5>
+            <p>Trusted by 100+ Happy Homeowners across Chennai, Thiruninravur & Sevvapet</p>
+
+            <a href="#contact" class="vk-btn">Learn More →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 5 -->
+<div class="col-lg-4 col-md-6">
+  <div class="vk-service-card">
+    <img src="images/commericial.jpg" alt="">
+
+    <div class="vk-service-content">
+      <h5>Commercial Construction</h5>
+      <p>Modern commercial spaces designed with efficiency and durability.</p>
+
+      <a href="#contact" class="vk-btn">Learn More →</a>
+    </div>
+  </div>
+</div>
+
+<!-- CARD 6 -->
+<div class="col-lg-4 col-md-6">
+  <div class="vk-service-card">
+    <img src="images/renoavtion.png" alt="">
+
+    <div class="vk-service-content">
+      <h5>Renovation & Remodeling</h5>
+      <p>Transforming existing spaces into modern, functional environments.</p>
+
+      <a href="#contact" class="vk-btn">Learn More →</a>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<section class="vk-text-marquee">
+  <div class="vk-marquee-wrap">
+
+    <div class="vk-marquee-text">
+      BUILDING SUCCESS TOGETHER ✦ BUILDING SUCCESS TOGETHER ✦ BUILDING SUCCESS TOGETHER ✦
+      BUILDING SUCCESS TOGETHER ✦ BUILDING SUCCESS TOGETHER ✦
+    </div>
+
+  </div>
+</section>
+
+
+<section class="vkp-portfolio py-5" style="background: linear-gradient(135deg, #0011B6, #000000)" id="port">
+  <div class="container">
+
+    <!-- TITLE -->
+    <div class="text-center mb-5">
+      <span class="vkp-badge text-white">Our Portfolio</span>
+      <h2 class="fw-bold mt-2 text-white">Our Latest Projects</h2>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- CARD 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="vkp-card">
+          <img src="images/onegal.jpg">
+          <div class="vkp-overlay">
+            
+            <a href="contact">View Project →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="vkp-card">
+          <img src="images/twogal.jpg">
+          <div class="vkp-overlay">
+            
+            <a href="contact">View Project →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="vkp-card">
+          <img src="images/threegal.jpg">
+          <div class="vkp-overlay">
+            
+            <a href="contact">View Project →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="vkp-card">
+          <img src="images/fourgal.jpg">
+          <div class="vkp-overlay">
+            
+            <a href="contact">View Project →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="vkp-card">
+          <img src="images/fivegal.jpg">
+          <div class="vkp-overlay">
+            
+            <a href="contact">View Project →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="vkp-card">
+          <img src="images/sixgal.jpg">
+          <div class="vkp-overlay">
+            
+            <a href="contact">View Project →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="vkp-card">
+          <img src="images/sevengal.jpg">
+          <div class="vkp-overlay">
+            
+            <a href="contact">View Project →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="vkp-card">
+          <img src="images/twogal.jpg">
+          <div class="vkp-overlay">
+            
+            <a href="contact">View Project →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="vkp-card">
+          <img src="images/tengal.jpg">
+          <div class="vkp-overlay">
+            
+            <a href="contact">View Project →</a>
+          </div>
+        </div>
+      </div>
+
+      
+
+  </div>
+</section>
+
+
+
+
+<section class="vk-google py-5" style="background: url('images/abtnback.png');">
+  <div class="container">
+
+    <!-- TITLE -->
+    <div class="text-center mb-4">
+      <h2 class="fw-bold">Google Reviews</h2>
+      <p class="text-muted">
+        For our time in the limelight, we’ve helped out on over 1,550 projects to date –
+        take a look at our testimonials below, and know you can 
+        <a href="#" class="text-primary">reach out</a> with confidence!
+      </p>
+    </div>
+
+    <!-- RATING BAR -->
+    <div class="vk-rating-box d-flex justify-content-between align-items-center flex-wrap mb-4">
+
+      <div class="d-flex align-items-center gap-3">
+        <img src="https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_92x30dp.png" width="100px">
+        <div>
+          <strong>5.0</strong>
+          <span class="vk-stars">★★★★★</span>
+          <small class="text-muted">202 reviews</small>
+        </div>
+      </div>
+
+      <button class="btn btn-primary">View More</button>
+
+    </div>
+
+    <!-- REVIEWS GRID -->
+    <div class="row g-4">
+
+      <!-- CARD -->
+      <div class="col-lg-3 col-md-6">
+  <div class="vk-review-card">
+    <div class="vk-stars">★★★★★</div>
+    <p>Very satisfied with VK Construction. Quality work and timely completion. Highly recommended for budget homes.</p>
+
+    <div class="vk-user">
+      <div class="vk-avatar">R</div>
+      <div>
+        <strong>Ramesh Kumar</strong><br>
+        <small>5 days ago</small>
+      </div>
+    </div>
+
+    <div class="vk-google">
+      <img src="https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png">
+      <small>Posted on Google</small>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-6">
+  <div class="vk-review-card">
+    <div class="vk-stars">★★★★★</div>
+    <p>Best builder in Thiruninravur area. Good design, vastu perfect and price is affordable.</p>
+
+    <div class="vk-user">
+      <div class="vk-avatar">S</div>
+      <div>
+        <strong>Suresh Babu</strong><br>
+        <small>2 weeks ago</small>
+      </div>
+    </div>
+
+    <div class="vk-google">
+      <img src="https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png">
+      <small>Posted on Google</small>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-6">
+  <div class="vk-review-card">
+    <div class="vk-stars">★★★★★</div>
+    <p>I purchased 2BHK house. Construction quality is strong and finishing is neat. Good customer support.</p>
+
+    <div class="vk-user">
+      <div class="vk-avatar">P</div>
+      <div>
+        <strong>Prakash</strong><br>
+        <small>10 days ago</small>
+      </div>
+    </div>
+
+    <div class="vk-google">
+      <img src="https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png">
+      <small>Posted on Google</small>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-6">
+  <div class="vk-review-card">
+    <div class="vk-stars">★★★★★</div>
+    <p>Very happy with my new house. Loan process also arranged smoothly by VK Construction team.</p>
+
+    <div class="vk-user">
+      <div class="vk-avatar">K</div>
+      <div>
+        <strong>Karthik</strong><br>
+        <small>3 weeks ago</small>
+      </div>
+    </div>
+
+    <div class="vk-google">
+      <img src="https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png">
+      <small>Posted on Google</small>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-6">
+  <div class="vk-review-card">
+    <div class="vk-stars">★★★★★</div>
+    <p>Affordable price and good location. Site visit experience was excellent. Highly trustworthy builder.</p>
+
+    <div class="vk-user">
+      <div class="vk-avatar">M</div>
+      <div>
+        <strong>Manoj</strong><br>
+        <small>1 week ago</small>
+      </div>
+    </div>
+
+    <div class="vk-google">
+      <img src="https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png">
+      <small>Posted on Google</small>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-6">
+  <div class="vk-review-card">
+    <div class="vk-stars">★★★★★</div>
+    <p>Construction quality is top class. Materials used are good and finishing is very clean.</p>
+
+    <div class="vk-user">
+      <div class="vk-avatar">A</div>
+      <div>
+        <strong>Arun Kumar</strong><br>
+        <small>2 weeks ago</small>
+      </div>
+    </div>
+
+    <div class="vk-google">
+      <img src="https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png">
+      <small>Posted on Google</small>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-6">
+  <div class="vk-review-card">
+    <div class="vk-stars">★★★★★</div>
+    <p>Very good experience. They completed the project on time and guided us throughout the process.</p>
+
+    <div class="vk-user">
+      <div class="vk-avatar">V</div>
+      <div>
+        <strong>Vignesh</strong><br>
+        <small>4 days ago</small>
+      </div>
+    </div>
+
+    <div class="vk-google">
+      <img src="https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png">
+      <small>Posted on Google</small>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-6">
+  <div class="vk-review-card">
+    <div class="vk-stars">★★★★★</div>
+    <p>Best place to buy individual house in Sevvapet. Good support and friendly team.</p>
+
+    <div class="vk-user">
+      <div class="vk-avatar">D</div>
+      <div>
+        <strong>Dinesh</strong><br>
+        <small>6 days ago</small>
+      </div>
+    </div>
+
+    <div class="vk-google">
+      <img src="https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png">
+      <small>Posted on Google</small>
+    </div>
+  </div>
+</div>
+
+     
+    </div>
+
+    <!-- LOAD MORE -->
+    <div class="text-center mt-4">
+      <button class="btn quote-btn">Load More</button>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="vkf-contact py-5" style=" background: linear-gradient(135deg, #0011B6, #000000)" id="contact">
+  <div class="container">
+    <div class="row align-items-stretch vkf-wrapper">
+
+      <!-- LEFT IMAGE -->
+      <div class="col-lg-6">
+        <div class="vkf-img-box">
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" alt="construction">
+        </div>
+      </div>
+
+      <!-- RIGHT FORM -->
+      <div class="col-lg-6">
+        <div class="vkf-form-box">
+
+          <h3>Get a Free Consultation</h3>
+          <p>Fill the form and our team will contact you soon</p>
+
+      <form id="vkForm">
+
+  <div class="row g-3">
+
+    <div class="col-md-6">
+      <input type="text" id="vkUserName" class="form-control" placeholder="Your Name" required>
+    </div>
+
+    <div class="col-md-6">
+      <input type="tel" id="vkUserPhone" class="form-control" placeholder="Phone Number" required>
+    </div>
+
+    <div class="col-md-6">
+      <input type="email" id="vkUserEmail" class="form-control" placeholder="Email Address">
+    </div>
+
+    <div class="col-md-6">
+      <select id="vkUserService" class="form-control">
+        <option>Select Service</option>
+        <option>Residential Construction</option>
+        <option>Commercial Projects</option>
+        <option>Renovation</option>
+        <option>Interior Design</option>
+      </select>
+    </div>
+
+    <div class="col-12">
+      <textarea id="vkUserMessage" class="form-control" rows="4" placeholder="Project Details"></textarea>
+    </div>
+
+    <div class="col-12">
+      <button type="submit" class="vkf-btn w-100">
+        Submit Request →
+      </button>
+    </div>
+
+  </div>
+
+</form>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="vkf-faq py-5">
+  <div class="container">
+
+    <!-- TITLE -->
+    <div class="text-center mb-5">
+      <span class="vkf-badge">FAQs</span>
+      <h2 class="fw-bold mt-2">Frequently Asked Questions</h2>
+    </div>
+
+    <div class="vkf-accordion">
+
+      <!-- ITEM -->
+      <div class="vkf-item active">
+        <div class="vkf-question">
+          <span>How long does a construction project take?</span>
+          <div class="vkf-icon">+</div>
+        </div>
+        <div class="vkf-answer">
+          Project duration depends on size and complexity, typically ranging from a few weeks to several months.
+        </div>
+      </div>
+
+      <div class="vkf-item">
+        <div class="vkf-question">
+          <span>Do you provide cost estimation before starting?</span>
+          <div class="vkf-icon">+</div>
+        </div>
+        <div class="vkf-answer">
+          Yes, we provide a detailed and transparent cost estimate before beginning the project.
+        </div>
+      </div>
+
+      <div class="vkf-item">
+        <div class="vkf-question">
+          <span>Do you provide bank loan support?</span>
+          <div class="vkf-icon">+</div>
+        </div>
+        <div class="vkf-answer">
+          Yes, we arrange up to 80-90% bank loan assistance for eligible customers.
+        </div>
+      </div>
+
+      <div class="vkf-item">
+        <div class="vkf-question">
+          <span>Are your projects vastu compliant?</span>
+          <div class="vkf-icon">+</div>
+        </div>
+        <div class="vkf-answer">
+          Yes, all our houses are 100% vastu compliant for better living standards.
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<footer class="vkftr-main pt-5">
+  <div class="container">
+
+    <div class="row g-4">
+
+      <!-- LEFT: LOGO + ABOUT -->
+      <div class="col-lg-4 col-md-6">
+        <img src="images/mainlogo.png" width="120px" style="background-color: white;padding: 20px;margin-bottom: 1rem;" alt="">
+        <p class="vkftr-text">
+          We build strong, reliable, and modern structures with precision and trust.
+          Delivering excellence in every project we undertake.
+        </p>
+
+        <!-- SOCIAL -->
+        <div class="vkftr-social">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/vk_construction_and_agency?igsh=bHE0OWhodzl2c2tj&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- QUICK LINKS -->
+      <div class="col-lg-2 col-md-6">
+        <h5 class="vkftr-title">Quick Links</h5>
+        <ul class="vkftr-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#port">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- SERVICES -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="vkftr-title">Services</h5>
+        <ul class="vkftr-links">
+          <li><a href="#service">Residential Construction</a></li>
+          <li><a href="#service">Commercial Projects</a></li>
+          <li><a href="#service">Renovation</a></li>
+          <li><a href="#service">Interior Design</a></li>
+        </ul>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="vkftr-title">Contact</h5>
+
+        <p><i class="fa-solid fa-location-dot"></i> No : 2/132 puliyamaram bus stop veppampattu pincode - 602024</p>
+        <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+        <p><i class="fa-solid fa-envelope"></i> Vinothkumarvr007@gmail.com</p>
+
+      </div>
+
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="vkftr-bottom text-center mt-4 pt-3">
+      <p>© 2026 VK Construction. All rights reserved. Designed By</p><a style="display:inline;color: white;text-decoration: none;"  href="">Tech Mayon</a>
+
+    </div>
+
+  </div>
+</footer>
+<button class="fire-scroll-top" id="fireScrollTop">
+    <i class="bi bi-arrow-up-short"></i>
+  </button>
+  <div class="whatsapp-icon whatsapp-float">
+  <a 
+    href=https://wa.me/918610992897?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20VK%20Construction%20projects.%20Could%20you%20please%20share%20details%20about%20available%201BHK%2C%202BHK%2C%20and%203BHK%20houses%2C%20pricing%2C%20loan%20facility%2C%20and%20site%20visit%3F
+    target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Build Tec Expo WhatsApp">
+  </a>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const form = document.getElementById("vkForm");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    let name = document.getElementById("vkUserName").value;
+    let phone = document.getElementById("vkUserPhone").value;
+    let email = document.getElementById("vkUserEmail").value;
+    let service = document.getElementById("vkUserService").value;
+    let message = document.getElementById("vkUserMessage").value;
+
+    if (name === "" || phone === "") {
+      alert("Please fill Name and Phone Number");
+      return;
+    }
+
+    let text =
+"Hello VK Construction,%0A%0A" +
+"Name: " + name + "%0A" +
+"Phone: " + phone + "%0A" +
+"Email: " + email + "%0A" +
+"Service: " + service + "%0A" +
+"Message: " + message;
+
+    let url = "https://wa.me/919952357012?text=" + text;
+
+    window.open(url, "_blank");
+
+  });
+
+});
+</script>
+
+<script>
+const texts = [
+  "Building Dreams Into Reality",
+  "Trusted Construction Experts",
+  "Quality That Lasts Forever"
+];
+
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
+
+function typeEffect() {
+  if (count === texts.length) {
+    count = 0;
+  }
+
+  currentText = texts[count];
+  letter = currentText.slice(0, ++index);
+
+  document.getElementById("typing-text").textContent = letter;
+
+  if (letter.length === currentText.length) {
+    setTimeout(eraseEffect, 1500);
+  } else {
+    setTimeout(typeEffect, 80);
+  }
+}
+
+function eraseEffect() {
+  letter = currentText.slice(0, --index);
+  document.getElementById("typing-text").textContent = letter;
+
+  if (letter.length === 0) {
+    count++;
+    setTimeout(typeEffect, 300);
+  } else {
+    setTimeout(eraseEffect, 40);
+  }
+}
+
+// Start typing
+typeEffect();
+</script>
+<script id="faqjs01">
+document.querySelectorAll(".vkf-question").forEach(item => {
+  item.addEventListener("click", () => {
+
+    const parent = item.parentElement;
+
+    // close others
+    document.querySelectorAll(".vkf-item").forEach(el => {
+      if(el !== parent){
+        el.classList.remove("active");
+        el.querySelector(".vkf-icon").innerText = "+";
+      }
+    });
+
+    // toggle current
+    parent.classList.toggle("active");
+
+    const icon = item.querySelector(".vkf-icon");
+    icon.innerText = parent.classList.contains("active") ? "-" : "+";
+
+  });
+});
+</script>
+<script>
+     window.addEventListener("load", () => {
+      const preloader = document.getElementById("firePreloader");
+      preloader.classList.add("fire-hidden");
+    });
+    const scrollBtn = document.getElementById("fireScrollTop");
+
+    window.addEventListener("scroll", () => {
+      scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
+    });
+
+    scrollBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+
+  <script>
+  // show after 2 seconds
+  setTimeout(() => {
+    document.getElementById("vkPopup").classList.add("active");
+  }, 2000);
+
+  function closePopup() {
+    document.getElementById("vkPopup").classList.remove("active");
+  }
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  // HANDLE ALL FORMS
+  document.querySelectorAll("form").forEach(form => {
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // get inputs safely
+      let name = form.querySelector("input[type='text']")?.value || "";
+      let phone = form.querySelector("input[type='tel']")?.value || "";
+      let email = form.querySelector("input[type='email']")?.value || "";
+      let service = form.querySelector("select")?.value || "";
+      let message = form.querySelector("textarea")?.value || "";
+
+      if (name === "" || phone === "") {
+        alert("Please fill Name and Phone Number");
+        return;
+      }
+
+      let text =
+"Hello VK Construction,%0A%0A" +
+"Name: " + name + "%0A" +
+"Phone: " + phone + "%0A" +
+"Email: " + email + "%0A" +
+"Service: " + service + "%0A" +
+"Message: " + message;
+
+      let url = "https://wa.me/919952357012?text=" + text;
+
+      window.open(url, "_blank");
+
+    });
+
+  });
+
+});
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+window.addEventListener("load", function() {
+  setTimeout(() => {
+    document.getElementById("vk-preloader").style.opacity = "0";
+    setTimeout(() => {
+      document.getElementById("vk-preloader").style.display = "none";
+    }, 300);
+  }, 1000); // small delay for smooth feel
+});
+</script>
+</body>
+</html>
