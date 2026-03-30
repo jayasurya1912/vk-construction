@@ -408,6 +408,20 @@ html, body {
   font-weight: 700;
   margin-bottom: 15px;
 }
+.vk-btne
+{
+  background-color: #F4B400;
+  color: black;
+  padding: 13px;
+  border-radius: 8px;
+}
+.vk-btne:hover
+{
+  background-color: #F4B400;
+  color: black;
+  padding: 13px;
+  border-radius: 8px;
+}
 
 .vk-about-content p {
   color: black;
@@ -415,7 +429,7 @@ html, body {
 }
 
 /* 🔥 ANIMATED BUTTON */
-.vk-btn-animate {
+.vk-btns-animate {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -429,50 +443,46 @@ html, body {
   overflow: hidden;
 }
 
-/* KEYFRAME ANIMATION */
-.vk-btn-animate::before {
+/* ANIMATION BACKGROUND */
+.vk-btns-animate::before {
   content: "";
   position: absolute;
   width: 0%;
   height: 100%;
   left: 0;
   top: 0;
-  background: #000;
+  background: #F4B400;
   z-index: 0;
   transition: 0.4s;
 }
 
-.vk-btn-animate:hover::before {
+.vk-btns-animate:hover::before {
   width: 100%;
 }
 
-/* TEXT ABOVE ANIMATION */
-.vk-btn-animate {
+/* 🔥 IMPORTANT FIX */
+.vk-btns-animate * {
   position: relative;
   z-index: 1;
+  transition: color 0.3s;
 }
 
-.vk-btn-animate:hover {
-  color: #fff;
+/* FORCE COLOR CHANGE */
+.vk-btns-animate:hover {
+  color: black !important;
 }
 
-.vk-btn-animate i {
+.vk-btns-animate:hover * {
+  color: black !important;
+}
+
+/* ICON MOVE */
+.vk-btns-animate i {
   transition: 0.3s;
 }
 
-.vk-btn-animate:hover i {
+.vk-btns-animate:hover i {
   transform: translateX(5px);
-}
-
-/* OPTIONAL KEYFRAME PULSE */
-@keyframes pulseBtn {
-  0% { box-shadow: 0 0 0 0 rgba(0, 77, 244, 0.6); }
-  70% { box-shadow: 0 0 0 15px rgba(244,180,0,0); }
-  100% { box-shadow: 0 0 0 0 rgba(244,180,0,0); }
-}
-
-.vk-btn-animate {
-  animation: pulseBtn 2s infinite;
 }
 
 /* 📱 RESPONSIVE */
@@ -605,7 +615,7 @@ html, body {
 /* BUTTON */
 .vk-btns {
   display: inline-block;
-  margin-top: 30px;
+  margin-top: 10px;
   color: black;
   font-weight: 600;
   text-decoration: none;
