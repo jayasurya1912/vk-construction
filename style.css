@@ -563,7 +563,7 @@ html, body {
 @media(max-width:768px){
   .vk-marquee-track img {
     width: 150px;
-    height: 100px;
+    height: 170px;
   }
 }
 /* CARD */
@@ -600,14 +600,17 @@ html, body {
 }
 
 /* BUTTON */
-.vk-btn {
+.vk-btns {
   display: inline-block;
-  margin-top: 10px;
-  color: #F4B400;
+  margin-top: 30px;
+  color: black;
   font-weight: 600;
   text-decoration: none;
+  background-color: #F4B400;
+  padding: 15px;
+  border-radius: 15px;
 }
-.vk-btn:hover {
+.vk-btns:hover {
   display: inline-block;
   margin-top: 10px;
   color: #F4B400;
