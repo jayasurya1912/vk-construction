@@ -9,7 +9,7 @@
 <!-- Bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="style.css">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -20,16 +20,14 @@
 
 <!-- PRELOADER -->
 <div id="vk-preloader">
-  <div class="vk-loader">
+  <div class="vk-loader-box">
 
-    <div class="vk-spinner"></div>
+    <div class="vk-loader-ring"></div>
 
-    <h2>VK Construction</h2>
-    <p>Building Your Dream Spaces...</p>
+    <img src="images/mainlogo.png" alt="Logo" class="vk-loader-logo">
 
   </div>
 </div>
-
     <!-- POPUP -->
 <!-- POPUP -->
 <div id="vkPopup" class="vk-popup">
@@ -256,15 +254,6 @@
 
 </section>
 
-<section class="vk-text-marquee">
-  <div class="vk-marquee-wrap">
-
-   <div class="vk-marquee-text">
-  VK Construction ✦ Building Dreams with Quality ✦ Trusted Construction Experts ✦ On-Time Project Delivery ✦ Excellence in Every Brick ✦
-</div>
-
-  </div>
-</section>
 
 
 
@@ -275,9 +264,25 @@
 
 
 
-<section class="vk-about-section py-3" id="about">
+
+<section class="vk-about-section py-4" id="about">
   <div class="container">
     <div class="row align-items-center">
+
+
+       <div class="col-lg-6">
+        <div class="vk-about-images">
+          <div class="vk-img-box vk-img1">
+            <img src="images/galthree.jpeg" alt="">
+          </div>
+          <div class="vk-img-box vk-img2">
+            <img src="images/onegal.jpg" alt="">
+          </div>
+          <div class="vk-img-box vk-img3">
+            <img src="images/galtwetyone.jpeg" alt="">
+          </div>
+        </div>
+      </div>
 
       <!-- LEFT CONTENT -->
       <div class="col-lg-6 mb-4 mb-lg-0">
@@ -304,85 +309,73 @@
       </div>
 
       <!-- RIGHT IMAGE GRID -->
-      <div class="col-lg-6">
-        <div class="vk-about-images">
-          <div class="vk-img-box vk-img1">
-            <img src="images/galthree.jpeg" alt="">
-          </div>
-          <div class="vk-img-box vk-img2">
-            <img src="images/onegal.jpg" alt="">
-          </div>
-          <div class="vk-img-box vk-img3">
-            <img src="images/galtwetyone.jpeg" alt="">
-          </div>
-        </div>
-      </div>
+     
 
     </div>
   </div>
 </section>
 
 
-<section class="vkCountIcon-section py-5">
+<section class="vk-diamond-counter py-5">
   <div class="container">
+    <div class="row text-center justify-content-center g-4">
 
-    <div class="row text-center g-4">
-
-      <!-- ITEM 1 -->
-      <div class="col-md-6 col-lg-3" data-aos="flip-up">
-        <div class="vkCountIcon-card">
-          <div class="vkCountIcon-icon">
-            <i class="bi bi-building"></i>
-          </div>
-          <h2 class="vkCountIcon-number" data-target="50">0</h2>
-          <p>Projects Completed</p>
+      <!-- ITEM -->
+      <div class="col-md-3 col-12" data-aos="flip-right">
+        <div class="vk-diamond-card pink">
+          <div class="vk-icon"><i class="bi bi-globe"></i></div>
+          <h3 class="vk-count" data-target="50">0 </h3>
+          <span class="vk-label">Projects Completed</span>
         </div>
       </div>
 
-      <!-- ITEM 2 -->
-      <div class="col-md-6 col-lg-3" data-aos="flip-up">
-        <div class="vkCountIcon-card">
-          <div class="vkCountIcon-icon">
-            <i class="bi bi-people"></i>
-          </div>
-          <h2 class="vkCountIcon-number" data-target="120">0</h2>
-          <p>Happy Clients</p>
+      <!-- ITEM -->
+      <div class="col-md-3 col-12" data-aos="flip-right">
+        <div class="vk-diamond-card purple">
+          <div class="vk-icon"><i class="bi bi-rocket"></i></div>
+          <h3 class="vk-count" data-target="200">0</h3>
+          <span class="vk-label">Happy Clients</span>
         </div>
       </div>
 
-      <!-- ITEM 3 -->
-      <div class="col-md-6 col-lg-3" data-aos="flip-up">
-        <div class="vkCountIcon-card">
-          <div class="vkCountIcon-icon">
-            <i class="bi bi-geo-alt"></i>
-          </div>
-          <h2 class="vkCountIcon-number" data-target="25">0</h2>
-          <p>Locations Covered</p>
+      <!-- ITEM -->
+      <div class="col-md-3 col-12" data-aos="flip-right">
+        <div class="vk-diamond-card blue">
+          <div class="vk-icon"><i class="bi bi-briefcase"></i></div>
+          <h3 class="vk-count" data-target="25">0</h3>
+          <span class="vk-label">Location Covered</span>
         </div>
       </div>
 
-      <!-- ITEM 4 -->
-      <div class="col-md-6 col-lg-3" data-aos="flip-up">
-        <div class="vkCountIcon-card">
-          <div class="vkCountIcon-icon">
-            <i class="bi bi-award"></i>
-          </div>
-          <h2 class="vkCountIcon-number" data-target="10">0</h2>
-          <p>Years Experience</p>
+      <!-- ITEM -->
+      <div class="col-md-3 col-12" data-aos="flip-right">
+        <div class="vk-diamond-card green">
+          <div class="vk-icon"><i class="bi bi-phone"></i></div>
+          <h3 class="vk-count" data-target="7">0</h3>
+          <span class="vk-label">Years Experience</span>
         </div>
       </div>
 
     </div>
-
   </div>
 </section>
 
+
+<section class="vk-text-marquee">
+  <div class="vk-marquee-wrap">
+
+   <div class="vk-marquee-text">
+  VK Construction ✦ Building Dreams with Quality ✦ Trusted Construction Experts ✦ On-Time Project Delivery ✦ Excellence in Every Brick ✦
+</div>
+
+  </div>
+</section>
 
 
 <section class="vkStepX-section py-5" id="services">
   <div class="container">
 
-    <!-- HEADER -->
+   
     <div class="text-center mb-5">
       <h2 class="vkStepX-title">Our Construction Process & Services Built to Perfection</h2>
       <p class="vkStepX-desc">
@@ -390,10 +383,9 @@
       </p>
     </div>
 
-    <!-- PROCESS ROW -->
     <div class="row g-4">
 
-      <!-- CARD 1 -->
+
       <div class="col-md-6 col-lg-3" data-aos="flip-up">
         <div class="vkStepX-card">
           <div class="vkStepX-top vkStepX-blue">
@@ -401,7 +393,9 @@
             <p>
               We identify and acquire prime land in high-growth areas to ensure long-term value.
             </p>
-            <a href="#contact" class="vkStepX-btns mt-2">Learn More</a>
+            <a href="#contact" class="vk-btn-animate" style="border: 2px solid white;">
+  Learn More <i class="bi bi-arrow-right"></i>
+</a>
           </div>
           <div class="vkStepX-img">
             <img src="images/plots.avif">
@@ -410,7 +404,7 @@
         </div>
       </div>
 
-      <!-- CARD 2 -->
+      
       <div class="col-md-6 col-lg-3" style="margin-top: 7rem;" data-aos="flip-up">
         <div class="vkStepX-card">
           <div class="vkStepX-top vkStepX-pink">
@@ -418,7 +412,9 @@
             <p>
               We create modern layouts and designs with premium materials and smart planning.
             </p>
-            <a href="#contact" class="vkStepX-btn">Learn More</a>
+            <a href="#contact" class="vk-btn-animate">
+  Learn More <i class="bi bi-arrow-right"></i>
+</a>
           </div>
           <div class="vkStepX-img">
             <img src="images/tengal.jpg">
@@ -427,7 +423,6 @@
         </div>
       </div>
 
-      <!-- CARD 3 -->
       <div class="col-md-6 col-lg-3" data-aos="flip-up">
         <div class="vkStepX-card">
           <div class="vkStepX-top vkStepX-blue">
@@ -435,7 +430,9 @@
             <p>
               Our team builds strong and durable structures with high-quality materials.
             </p>
-            <a href="#contact" class="vkStepX-btns mt-2">Learn More</a>
+           <a href="#contact" class="vk-btn-animate" style="border: 2px solid white;">
+  Learn More <i class="bi bi-arrow-right"></i>
+</a>
           </div>
           <div class="vkStepX-img">
             <img src="images/galtweenty.jpeg">
@@ -444,7 +441,6 @@
         </div>
       </div>
 
-      <!-- CARD 4 --> 
       <div class="col-md-6 col-lg-3" style="margin-top: 7rem;" data-aos="flip-up">
         <div class="vkStepX-card">
           <div class="vkStepX-top vkStepX-pink">
@@ -452,7 +448,9 @@
             <p>
               We deliver ready-to-use properties with complete finishing and customer satisfaction.
             </p>
-            <a href="#contact" class="vkStepX-btn">Learn More</a>
+              <a href="#contact" class="vk-btn-animate">
+  Learn More <i class="bi bi-arrow-right"></i>
+</a>
           </div>
           <div class="vkStepX-img">
             <img src="images/galthree.jpeg">
@@ -461,7 +459,7 @@
         </div>
       </div>
 
-      <!-- CARD 1 -->
+
 
     </div>
 
@@ -507,102 +505,165 @@
 </section> 
 
 
-<section class="vkFullProp-section py-5">
+
+
+
+<section class="vkPro-property py-5">
   <div class="container">
-    <h2 style="text-align: center;margin-bottom: 2rem;font-weight: 600;">Find Your Perfect Home Today</h2>
+    <h2 style="text-align: center;margin-bottom: 2rem;font-weight: 600;color: white;">Find Your Perfect Home Today</h2>
     <div class="row g-4">
 
       <!-- CARD 1 -->
-      <div class="col-lg-3 col-md-6 col-12" data-aos="flip-right">
-        <div class="vkFullProp-card" style="background: linear-gradient(135deg, #0011B6, #000000);">
-          <div class="vkFullProp-img">
-            <img src="images/galtweenty.jpeg">
-            <span class="vkFullProp-price">₹42 Lakhs</span>
+      <div class="col-lg-3 col-md-6">
+        <div class="vkPro-card">
+
+          <div class="vkPro-img">
+            <img src="images/galthree.jpeg">
+        
+           
           </div>
-          <div class="vkFullProp-content">
-            <h6 class="text-white">2BHK Individual House</h6>
-            <p class="vkFullProp-loc text-white"><i class="bi bi-geo-alt"></i> Asai Nagar, Sevvapet</p>
-            <ul class="vkFullProp-list">
-              <li class="text-white"><i class="bi bi-aspect-ratio" style="color: white;"></i> Land: 900 sqft</li>
-              <li class="text-white"><i class="bi bi-building" style="color: white;"></i> Building: 800 sqft</li>
-              <li class="text-white"><i class="bi bi-compass" style="color: white;"></i> Facing: North</li>
-              <li class="text-white"><i class="bi bi-train-front" style="color: white;"></i> 2 km from Railway Station</li>
-            </ul>
-            <a href="#contact" class="vkFullProp-btn">View Details</a>
+
+          <div class="vkPro-body">
+            <h5>Asai Nagar, Sevvapet</h5>
+            <p class="vkPro-sub">2BHK Individual House</p>
+
+            <div class="vkPro-info">
+              <span><i class="bi bi-rulers"></i> 900 sqft</span>
+              <span><i class="bi bi-house"></i> 2 Beds</span>
+              <span><i class="bi bi-droplet"></i> 2 Baths</span>
+            </div>
+
+            <p class="vkPro-loc">
+              <i class="bi bi-geo-alt"></i> 2 km from Railway Station
+            </p>
+
+            <div class="vkPro-footer">
+  <h4>₹55 Lakhs</h4>
+
+  <div class="vkPro-actions">
+    <a href="#" class="vkPro-btn">View</a>
+    <i class="bi bi-heart"></i>
+  </div>
+</div>
           </div>
+
         </div>
       </div>
 
       <!-- CARD 2 -->
-      <div class="col-lg-3 col-md-6 col-12" data-aos="flip-right">
-        <div class="vkFullProp-card">
-          <div class="vkFullProp-img">
-            <img src="images/galtwetyone.jpeg">
-            <span class="vkFullProp-price">₹55 Lakhs</span>
+      <div class="col-lg-3 col-md-6">
+        <div class="vkPro-card">
+
+          <div class="vkPro-img">
+            <img src="images/galtweenty.jpeg">
+            
+ 
           </div>
-          <div class="vkFullProp-content">
-            <h6>2BHK Individual House</h6>
-            <p class="vkFullProp-loc"><i class="bi bi-geo-alt"></i> Srimathi Nagar, Sevvapet</p>
-            <ul class="vkFullProp-list">
-              <li><i class="bi bi-aspect-ratio"></i> Land: 1200 sqft</li>
-              <li><i class="bi bi-building"></i> Building: 1000 sqft</li>
-              <li><i class="bi bi-compass"></i> Facing: North</li>
-              <li><i class="bi bi-train-front"></i> 1 km from Railway Station</li>
-            </ul>
-            <a href="#contact" class="vkFullProp-btn">View Details</a>
+
+          <div class="vkPro-body">
+            <h5>Srimathi Nagar, Sevvapet</h5>
+            <p class="vkPro-sub">2BHK Individual House</p>
+
+            <div class="vkPro-info">
+              <span><i class="bi bi-rulers"></i> 1200 sqft</span>
+              <span><i class="bi bi-house"></i> 2 Beds</span>
+              <span><i class="bi bi-droplet"></i> 2 Baths</span>
+            </div>
+
+            <p class="vkPro-loc">
+              <i class="bi bi-geo-alt"></i> 1 km from Railway Station
+            </p>
+
+            <div class="vkPro-footer">
+  <h4>₹55 Lakhs</h4>
+
+  <div class="vkPro-actions">
+    <a href="#" class="vkPro-btn">View</a>
+    <i class="bi bi-heart"></i>
+  </div>
+</div>
           </div>
+
         </div>
       </div>
 
       <!-- CARD 3 -->
-      <div class="col-lg-3 col-md-6 col-12" data-aos="flip-right">
-        <div class="vkFullProp-card">
-          <div class="vkFullProp-img">
-            <img src="images/galthree.jpeg">
-            <span class="vkFullProp-price">₹55 Lakhs</span>
+      <div class="col-lg-3 col-md-6">
+        <div class="vkPro-card">
+
+          <div class="vkPro-img">
+            <img src="images/galwhy.jpeg">
+            
+     
           </div>
-          <div class="vkFullProp-content">
-            <h6>2BHK Duplex House</h6>
-            <p class="vkFullProp-loc"><i class="bi bi-geo-alt"></i> Veppampattu</p>
-            <ul class="vkFullProp-list">
-              <li><i class="bi bi-aspect-ratio"></i> Land: 800 sqft</li>
-              <li><i class="bi bi-building"></i> Building: 1200 sqft</li>
-              <li><i class="bi bi-compass"></i> Facing: South</li>
-              <li><i class="bi bi-house"></i> Duplex Model</li>
-            </ul>
-            <a href="#contact" class="vkFullProp-btn">View Details</a>
+
+          <div class="vkPro-body">
+            <h5>Veppampattu</h5>
+            <p class="vkPro-sub">2BHK Duplex House</p>
+
+            <div class="vkPro-info">
+              <span><i class="bi bi-rulers"></i> 800 sqft</span>
+              <span><i class="bi bi-house"></i> Duplex</span>
+              <span><i class="bi bi-compass"></i> South</span>
+            </div>
+
+            <p class="vkPro-loc">
+              <i class="bi bi-house-door"></i> Duplex Model
+            </p>
+
+            <div class="vkPro-footer">
+  <h4>₹55 Lakhs</h4>
+
+  <div class="vkPro-actions">
+    <a href="#" class="vkPro-btn">View</a>
+    <i class="bi bi-heart"></i>
+  </div>
+</div>
           </div>
+
         </div>
       </div>
 
       <!-- CARD 4 -->
-      <div class="col-lg-3 col-md-6 col-12" data-aos="flip-right">
-        <div class="vkFullProp-card" style=" background: linear-gradient(135deg, #0011B6, #000000);">
-          <div class="vkFullProp-img">
-            <img src="images/galhome.jpeg">
-            <span class="vkFullProp-price">₹42 Lakhs</span>
+      <div class="col-lg-3 col-md-6">
+        <div class="vkPro-card">
+
+          <div class="vkPro-img">
+            <img src="images/galtwetyone.jpeg">
+            
+         
           </div>
-          <div class="vkFullProp-content">
-            <h6 class="text-white">2BHK Individual House</h6>
-            <p class="vkFullProp-loc text-white"><i class="bi bi-geo-alt"></i> Thirumalai Nagar, Sevvapet</p>
-            <ul class="vkFullProp-list">
-              <li class="text-white"><i class="bi bi-aspect-ratio" style="color: white;"></i> Land: 900 sqft</li>
-              <li class="text-white"><i class="bi bi-building" style="color: white;"></i> Building: 800 sqft</li>
-              <li class="text-white"><i class="bi bi-compass" style="color: white;"></i> Facing: North</li>
-              <li class="text-white"><i class="bi bi-train-front" style="color: white;"></i> 1.5 km from Railway Station</li>
-            </ul>
-            <a href="#contact" class="vkFullProp-btn">View Details</a>
+
+          <div class="vkPro-body">
+            <h5>Thirumalai Nagar, Sevvapet</h5>
+            <p class="vkPro-sub">2BHK Individual House</p>
+
+            <div class="vkPro-info">
+              <span><i class="bi bi-rulers"></i> 900 sqft</span>
+              <span><i class="bi bi-house"></i> 2 Beds</span>
+              <span><i class="bi bi-droplet"></i> 2 Baths</span>
+            </div>
+
+            <p class="vkPro-loc">
+              <i class="bi bi-geo-alt"></i> 1.5 km from Railway Station
+            </p>
+
+            <div class="vkPro-footer">
+  <h4>₹42 Lakhs</h4>
+
+  <div class="vkPro-actions">
+    <a href="#" class="vkPro-btn">View</a>
+    <i class="bi bi-heart"></i>
+  </div>
+</div>
           </div>
+
         </div>
       </div>
 
     </div>
-
   </div>
 </section>
-
-
-
 
 <section class="vkWhyPro-section py-5" id="why" >
   <div class="container">
@@ -899,141 +960,77 @@
 
 
 
-<section class="vkContactClean-section py-5" >
-  <div class="container">
-    <div class="row align-items-center g-5">
-
-      <!-- LEFT IMAGE COLLAGE -->
-      <div class="col-lg-6">
-        <div class="vkContactClean-grid">
-
-          <div class="vkContactClean-img big" style="border: 7px solid white;">
-            <img src="images/galthree.jpeg">
-          </div>
-
-          <div class="vkContactClean-img small">
-            <img src="images/galsixteen.jpeg">
-          </div>
-
-          <div class="vkContactClean-img small">
-            <img src="images/galhome.jpeg">
-          </div>
-
-        </div>
-      </div>
-
-      <!-- RIGHT FORM -->
-      <div class="col-lg-6">
-        <div class="vkContactClean-form">
-
-          <h3>Get a Free Consultation</h3>
-          <p>Fill in your details and our team will contact you shortly</p>
-
-          <form id="whatsappForm">
-  <div class="row g-3">
-
-    <div class="col-md-12">
-      <input type="text" id="name" placeholder="Your Name" required>
-    </div>
-
-    <div class="col-md-12">
-      <input type="tel" id="phone" placeholder="Phone Number" required>
-    </div>
-
-    <div class="col-md-12">
-      <input type="email" id="email" placeholder="Email Address">
-    </div>
-
-    <div class="col-12">
-      <textarea id="message" rows="3" placeholder="Project Details"></textarea>
-    </div>
-
-    <div class="col-12">
-      <button type="submit">Submit Request →</button>
-    </div>
-
-  </div>
-</form>
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
 
 
 
-<section class="vkTestX-section py-5" >
+
+<section class="vkTestWrap py-5">
   <div class="container">
 
     <!-- HEADER -->
     <div class="text-center mb-5">
-      <h2 class="vkTestX-title text-white">What Our Clients Say</h2>
-      <p class="vkTestX-sub text-white">Trusted by homeowners for quality and reliability</p>
+      <p class="vkTestSub">Testimonials</p>
+      <h2 class="vkTestHeading">Real Stories from Happy Homeowners</h2>
     </div>
 
-    <div class="vkTestX-wrapper">
+    <!-- CARD -->
+    <div class="vkTestBox">
 
-      <!-- SLIDER -->
-      <div class="vkTestX-track" id="vkTestXTrack">
+      <div class="row align-items-center g-0">
 
-        <!-- CARD 1 -->
-       <!-- CARD 1 -->
-<div class="vkTestX-card">
-  <img src="images/men.png">
-  <p>VK Construction delivered our dream home exactly as promised. Smooth process and great quality.</p>
-  <h6>Arun Kumar</h6>
-</div>
+        <!-- LEFT IMAGE -->
+        <div class="col-lg-6">
+          <div class="vkTestImgWrap">
+            <img src="images/galtweenty.jpeg">
+          </div>
+        </div>
 
-<!-- CARD 2 -->
-<div class="vkTestX-card">
-  <img src="images/womenone.png">
-  <p>Very transparent and professional team. Highly recommended for property investment.</p>
-  <h6>Priya Sharma</h6>
-</div>
+        <!-- RIGHT CONTENT -->
+        <div class="col-lg-6 position-relative">
+          <div class="vkTestContent">
 
-<!-- CARD 3 -->
-<div class="vkTestX-card">
-  <img src="images/menone.png">
-  <p>The construction quality is excellent. They delivered on time without any delays.</p>
-  <h6>Rahul Verma</h6>
-</div>
+            <span class="vkQuote">“</span>
 
-<!-- CARD 4 -->
-<div class="vkTestX-card">
-  <img src="images/women.png">
-  <p>From land purchase to final delivery, everything was handled perfectly.</p>
-  <h6>Sneha Reddy</h6>
-</div>
+            <h5>Professional & Personable</h5>
 
-<!-- CARD 5 -->
-<div class="vkTestX-card">
-  <img src="images/mentwo.png">
-  <p>Very good experience. The team is supportive and delivers what they promise.</p>
-  <h6>Karthik Raj</h6>
-</div>
+            <p>
+              From the moment we met VK Construction, we knew we were in good hands. 
+              They guided us through the entire process with professionalism and care.
+            </p>
 
-<!-- CARD 6 -->
-<div class="vkTestX-card">
-  <img src="images/womentwo.png">
-  <p>Best choice for buying ready-to-move homes. Clean finishing and great design.</p>
-  <h6>Divya Nair</h6>
-</div>
+            <!-- USER -->
+            <div class="vkTestProfile">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg">
+              <div>
+                <h6>James Emily</h6>
+                <span>First Time Buyer</span>
+              </div>
+            </div>
+
+            <!-- DOTS -->
+            <div class="vkTestDots">
+              <span class="active"></span>
+              <span></span>
+              <span></span>
+            </div>
+
+          </div>
+
+          <!-- ARROWS -->
+          <div class="vkTestNav">
+            <button class="vkPrev">←</button>
+            <button class="vkNext">→</button>
+          </div>
+
+        </div>
 
       </div>
-
-      <!-- NAV -->
-      <button class="vkTestX-btn prev" style="font-size: 24px;" onclick="vkTestXPrev()">‹</button>
-      <button class="vkTestX-btn next" style="font-size: 24px;" onclick="vkTestXNext()">›</button>
-
-      <!-- DOTS -->
-      <div class="vkTestX-dots" id="vkTestXDots"></div>
 
     </div>
 
   </div>
 </section>
+
 
 <section class="vk-gallery-section">
   <div class="container">
@@ -1063,6 +1060,106 @@
 
   </div>
 </section>
+
+
+<section class="vkContact-section py-5">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <!-- LEFT CONTENT -->
+      <div class="col-lg-6">
+        <div class="vkContact-left">
+
+          <p class="vkContact-sub">
+            <i class="bi bi-house-door"></i> Contact Us
+          </p>
+
+          <h2>
+            Get In Touch With Us: Your Real Estate Partner
+          </h2>
+
+          <p class="vkContact-desc">
+            We are here to assist you with all your real estate needs. Whether you are buying,
+            selling, renting, or investing, our experienced team is ready to provide you with support.
+          </p>
+
+          <div class="vkContact-info">
+            <p><i class="bi bi-geo-alt"></i> 570 White Mission Apt. hellerborough</p>
+            <p><i class="bi bi-telephone"></i> (925) 683-1469</p>
+            <p><i class="bi bi-envelope"></i> mike@homz.com</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- RIGHT FORM -->
+      <div class="col-lg-6">
+        <div class="vkContact-form">
+
+          <h4>Schedule an Appointment</h4>
+
+          <form id="vkWhatsappForm">
+  <div class="row g-3">
+
+    <div class="col-md-6">
+      <div class="vkInputWrap">
+        <i class="bi bi-person"></i>
+        <input type="text" id="vkFirstName" placeholder="First Name">
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="vkInputWrap">
+        <i class="bi bi-person"></i>
+        <input type="text" id="vkLastName" placeholder="Last Name">
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="vkInputWrap">
+        <i class="bi bi-envelope"></i>
+        <input type="email" id="vkEmail" placeholder="Email">
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="vkInputWrap">
+        <i class="bi bi-telephone"></i>
+        <input type="text" id="vkPhone" placeholder="Phone">
+      </div>
+    </div>
+
+    <div class="col-12">
+      <div class="vkInputWrap">
+        <i class="bi bi-chat-left-text"></i>
+        <input type="text" id="vkSubject" placeholder="Subject">
+      </div>
+    </div>
+
+    <div class="col-12">
+      <div class="vkInputWrap textarea">
+        <i class="bi bi-pencil"></i>
+        <textarea id="vkMessage" rows="5" placeholder="Message"></textarea>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <button type="submit" class="vkSubmit-btn">
+        Send Now <i class="bi bi-arrow-up-right"></i>
+      </button>
+    </div>
+
+  </div>
+</form>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 
 
 <section class="vkf-faq py-5">
@@ -1241,11 +1338,11 @@
           </li>
           <li>
             <span class="icon"><i class="fas fa-envelope"></i></span>
-            <span> Vinothkumarvr007@gmail.com/span>
+            <span> Vinothkumarvr007@gmail.com</span>
           </li>
           <li>
             <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
-            <span>No : 2/132 puliyamaram bus stop veppampattu pincode - 602024</span>
+            <span>No : 2/132 puliyamaram bus stop <br> veppampattu  pincode - 602024</span>
           </li>
         </ul>
       </div>
@@ -1636,6 +1733,159 @@ window.addEventListener("load", function () {
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
+</script>
+
+<script>
+const counters = document.querySelectorAll('.vk-count');
+let started = false;
+
+function startCount() {
+  counters.forEach(counter => {
+    const target = +counter.getAttribute('data-target');
+    let count = 0;
+    const speed = target / 100;
+
+    function update() {
+      count += speed;
+      if (count < target) {
+        counter.innerText = Math.floor(count);
+        requestAnimationFrame(update);
+      } else {
+        counter.innerText = target;
+      }
+    }
+
+    update();
+  });
+}
+
+window.addEventListener('scroll', () => {
+  const section = document.querySelector('.vk-diamond-counter');
+  const trigger = section.offsetTop - window.innerHeight + 100;
+
+  if (window.scrollY > trigger && !started) {
+    startCount();
+    started = true;
+  }
+});
+</script>
+<script>
+const vkTestContainer = document.querySelector('.vkTestBox');
+
+/* DATA (your slides content) */
+const vkTestData = [
+  {
+    img: "images/galtweenty.jpeg",
+    title: "Professional & Personable",
+    text: "From the moment we met VK Construction, we knew we were in good hands. They guided us through the entire process with professionalism and care.",
+    name: "James Emily",
+    role: "First Time Buyer",
+    avatar: "https://randomuser.me/api/portraits/women/44.jpg"
+  },
+  {
+    img: "images/galthree.jpeg",
+    title: "Quality Construction",
+    text: "The quality of construction exceeded our expectations. Every detail was handled with care and precision.",
+    name: "Arun Kumar",
+    role: "Home Owner",
+    avatar: "https://randomuser.me/api/portraits/men/32.jpg"
+  },
+  {
+    img: "images/tengal.jpg",
+    title: "Smooth Process",
+    text: "VK Construction made the entire process smooth and stress-free. Highly recommended!",
+    name: "Priya Devi",
+    role: "Client",
+    avatar: "https://randomuser.me/api/portraits/women/65.jpg"
+  }
+];
+
+let vkCurrentIndex = 0;
+
+/* ELEMENTS */
+const vkImage = document.querySelector('.vkTestImgWrap img');
+const vkTitle = document.querySelector('.vkTestContent h5');
+const vkText = document.querySelector('.vkTestContent p');
+const vkName = document.querySelector('.vkTestProfile h6');
+const vkRole = document.querySelector('.vkTestProfile span');
+const vkAvatar = document.querySelector('.vkTestProfile img');
+
+const vkPrevBtn = document.querySelector('.vkPrev');
+const vkNextBtn = document.querySelector('.vkNext');
+const vkDots = document.querySelectorAll('.vkTestDots span');
+
+/* UPDATE FUNCTION */
+function updateVKTestimonial(index) {
+  const data = vkTestData[index];
+
+  vkImage.src = data.img;
+  vkTitle.innerText = data.title;
+  vkText.innerText = data.text;
+  vkName.innerText = data.name;
+  vkRole.innerText = data.role;
+  vkAvatar.src = data.avatar;
+
+  /* DOT ACTIVE */
+  vkDots.forEach(dot => dot.classList.remove('active'));
+  vkDots[index].classList.add('active');
+}
+
+/* NEXT */
+vkNextBtn.addEventListener('click', () => {
+  vkCurrentIndex = (vkCurrentIndex + 1) % vkTestData.length;
+  updateVKTestimonial(vkCurrentIndex);
+});
+
+/* PREV */
+vkPrevBtn.addEventListener('click', () => {
+  vkCurrentIndex = (vkCurrentIndex - 1 + vkTestData.length) % vkTestData.length;
+  updateVKTestimonial(vkCurrentIndex);
+});
+
+/* DOT CLICK */
+vkDots.forEach((dot, i) => {
+  dot.addEventListener('click', () => {
+    vkCurrentIndex = i;
+    updateVKTestimonial(vkCurrentIndex);
+  });
+});
+
+/* AUTO SLIDE */
+setInterval(() => {
+  vkCurrentIndex = (vkCurrentIndex + 1) % vkTestData.length;
+  updateVKTestimonial(vkCurrentIndex);
+}, 4000);
+
+</script> 
+<script>
+document.getElementById("vkWhatsappForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const firstName = document.getElementById("vkFirstName").value;
+  const lastName = document.getElementById("vkLastName").value;
+  const email = document.getElementById("vkEmail").value;
+  const phone = document.getElementById("vkPhone").value;
+  const subject = document.getElementById("vkSubject").value;
+  const message = document.getElementById("vkMessage").value;
+
+  const fullMessage =
+`Hello VK Construction,
+
+Name: ${firstName} ${lastName}
+Email: ${email}
+Phone: ${phone}
+
+Subject: ${subject}
+Message: ${message}`;
+
+  const encodedMessage = encodeURIComponent(fullMessage);
+
+  const whatsappNumber = "919876543210"; // 🔥 replace with your number
+
+  const url = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+  window.open(url, "_blank");
+});
 </script>
 </body>
 </html>
