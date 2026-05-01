@@ -4653,6 +4653,7 @@ box-shadow: 0 12px 30px rgba(41, 24, 86, 0.5);
   margin-bottom: 10px;
   text-align: justify;
   font-family: 'Poppins', sans-serif;
+  text-align: justify;
 }
 #vkTypingText::after {
   content: "|";
