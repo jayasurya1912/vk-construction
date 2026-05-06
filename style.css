@@ -5136,3 +5136,163 @@ box-shadow: 0 12px 30px rgba(41, 24, 86, 0.5);
   }
 
 }
+.vkPro-card{
+  background:#fff;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  transition:0.4s;
+  height:100%;
+  border:1px solid #eee;
+}
+
+.vkPro-card:hover{
+  transform:translateY(-8px);
+}
+
+.vkPro-img{
+  position:relative;
+  overflow:hidden;
+}
+
+.vkPro-img img{
+  width:100%;
+  height:240px;
+  object-fit:cover;
+  transition:0.5s;
+}
+
+.vkPro-card:hover .vkPro-img img{
+  transform:scale(1.08);
+}
+
+.vkPro-body{
+  padding:20px;
+}
+
+.vkPro-body h5{
+  font-size:22px;
+  font-weight:700;
+  margin-bottom:8px;
+  color:#111;
+}
+
+.vkPro-sub{
+  color:black;
+  font-size:15px;
+  margin-bottom:18px;
+}
+
+.vkPro-info{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-bottom:15px;
+}
+
+.vkPro-info span{
+  background:#f1f5f9;
+  padding:7px 12px;
+  border-radius:30px;
+  font-size:13px;
+  color:#222;
+  font-weight:500;
+}
+
+.vkPro-info i{
+  color:#0011B6;
+  margin-right:4px;
+}
+
+.vkPro-loc{
+  font-size:14px;
+  color:black;
+  margin-bottom:10px;
+}
+
+.vkPro-loc i{
+  color:red;
+  margin-right:5px;
+}
+
+.vkPro-extra{
+  font-size:14px;
+  color:black;
+  line-height:1.8;
+  margin-bottom:18px;
+}
+
+.vkPro-footer{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-top:1px solid #eee;
+  padding-top:15px;
+}
+
+.vkPro-footer h4{
+  font-size:24px;
+  color:#0011B6;
+  font-weight:700;
+  margin:0;
+}
+
+.vkPro-actions{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.vkPro-btn{
+  background:linear-gradient(135deg,#0011B6,#000);
+  color:#fff;
+  padding:9px 18px;
+  border-radius:30px;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.vkPro-btn:hover{
+  background:linear-gradient(135deg,#000,#0011B6);
+  color:#fff;
+}
+
+.vkPro-actions i{
+  width:42px;
+  height:42px;
+  background:#f1f5f9;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  font-size:18px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.vkPro-actions i:hover{
+  background:#0011B6;
+  color:#fff;
+}
+
+@media(max-width:768px){
+
+  .vkPro-body{
+    padding:18px;
+  }
+
+  .vkPro-body h5{
+    font-size:20px;
+  }
+
+  .vkPro-footer h4{
+    font-size:20px;
+  }
+
+  .vkPro-btn{
+    padding:8px 14px;
+    font-size:13px;
+  }
+}
